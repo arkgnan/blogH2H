@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Blog;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -13,7 +14,11 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        // we will create index function
+        // we need to show all data from "blog" table
+        $blogs = Blog::all();
+        // show data to our view
+        return view('blog.index',['blogs'] => $blogs);
     }
 
     /**
