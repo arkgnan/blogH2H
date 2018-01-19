@@ -18,7 +18,7 @@ class BlogController extends Controller
         // we need to show all data from "blog" table
         $blogs = Blog::all();
         // show data to our view
-        return view('blog.index',['blogs'] => $blogs);
+        return view('blog.index',['blogs' => $blogs]);
     }
 
     /**
