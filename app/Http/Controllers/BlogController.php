@@ -28,7 +28,8 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        // we will return to our new views
+        return view('blog.create');
     }
 
     /**
@@ -39,7 +40,19 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // we will create validation function here
+        $this->validate($request,[
+            'title'=>'required',
+            'description'=>'required'
+        ]);
+
+        $blog = new Blog;
+        $blog->title = $request->title;
+        $blog->description = $request->description;
+        // save all data
+        $blog->save();
+        //redirect page after save data
+        return redirect('blog')->with('message','data hasbeen updated!');
     }
 
     /**
