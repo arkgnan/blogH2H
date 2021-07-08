@@ -1,0 +1,235 @@
+.united {
+    color: black;
+    text-shadow:
+        1px 0px 0px #fff,
+        -1px 0px 0px #fff,
+        0px 1px 0px #fff,
+        0px -1px 0px #fff,
+        1px 1px 2px #000;
+}
+
+.tronik {
+    color: red;
+    text-shadow:
+        1px 0px 0px #fff,
+        -1px 0px 0px #fff,
+        0px 1px 0px #fff,
+        0px -1px 0px #fff,
+        1px 1px 2px #000;
+}
+
+/* .carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} */
+
+.no-style {
+    text-decoration: none !important;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid #DDD;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+}
+
+/*.nav-tabs > .nav-item > .nav-link.active, .nav-tabs > .nav-item > .nav-link.active:focus, .nav-tabs > .nav-item > .nav-link.active:hover {
+    border-width: 0;
+}*/
+.nav-tabs>li>a {
+    border: none;
+    color: #666;
+}
+
+.nav-tabs>li {
+    float: none;
+}
+
+.nav-tabs>li.nav-item>a.active,
+.card-link {
+    color: #b51a1a;
+}
+
+.nav-tabs>li.nav-item>a,
+.nav-tabs>li.nav-item>a:hover {
+    border: none;
+    color: #666;
+    background: transparent;
+    position: relative;
+}
+
+.nav-tabs>li.nav-item>a::after {
+    content: "";
+    background: #b51a1a;
+    height: 4px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -1px;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+}
+
+.nav-tabs>li.nav-item>a.active::after,
+.nav-tabs>li.nav-item:hover>a::after {
+    transform: scale(1);
+}
+
+.accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Font Awesome 5 Free';
+    content: "\f150";
+    float: right;
+}
+
+.accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f152";
+}
+
+.bg-light-transparent {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-dark-transparent {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+@media all and (max-width:575px) {
+    .icon-bar {
+        visibility: hidden;
+    }
+
+    .navbar-footer ul.navbar-nav,
+    .navbar-footer ul.navbar-nav li.nav-footer {
+        display: inline-block !important;
+    }
+
+    .btn-xs-block {
+        width: 100%;
+        display: block;
+    }
+}
+
+.icon-bar {
+    z-index: 1005;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+
+}
+
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.google {
+    background: #dd4b39;
+    color: white;
+}
+
+.linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.custom-file-label {
+    overflow: hidden;
+}
+
+/* testimoni */
+.isteColor {
+    color: #cd2147;
+}
+
+.isteColor:hover {
+    color: #353A40;
+}
+
+/*haber akışı list*/
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+ul.timeline>li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul.timeline>li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #cd2147;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+/*vertical carousel*/
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100% 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
